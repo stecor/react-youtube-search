@@ -6,7 +6,11 @@ import SearchBar from './components/search_bar';
 import YTSearch from 'youtube-api-search';
 //Create a new component (produce html)
 
- config.API_KEY;
+ ;
+
+ YTSearch({key: config.API_KEY, term: 'surfboards'}, function(data){
+   console.log(data);
+ })
 
 const App = ()=>{
   return (
